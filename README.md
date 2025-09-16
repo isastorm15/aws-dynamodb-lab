@@ -1,53 +1,72 @@
-🚀 DynamoDB Examples
+📂 DynamoDB Examples
 
-Este repositório contém exemplos de **criação de tabelas no Amazon DynamoDB** e inserção de dados utilizando **arquivos JSON** e um script em **PowerShell**.  
-A ideia é ser um guia simples e prático para quem está começando a aprender DynamoDB.
+Este repositório contém exemplos práticos de criação de tabelas no Amazon DynamoDB e inserção de dados utilizando arquivos JSON e um script em PowerShell.
 
-📂 Estrutura do projeto
+A ideia é mostrar, de forma simples e organizada, como estruturar e popular tabelas com dados iniciais para fins de estudo e experimentação.
 
+📁 Estrutura do projeto
 dynamodb-examples/
-│
-├── users-teams/                # Usuários e seus times de futebol
-│   ├── datausers-teams-table.json
-│   └── datausers-teams-items.json
-│
-├── users-selecoes/             # Usuários e suas seleções
-│   ├── datausers-selecoes-table.json
-│   └── datausers-selecoes-items.json
-│
-├── users-vehicles/             # Usuários e seus veículos
-│   ├── datausers-vehicles-table.json
-│   └── datausers-vehicles-items.json
-│
-├── create-tables.ps1           # Script PowerShell para criar e popular as tabelas
-└── README.md                   # Documentação do projeto
+users-teams/                # Usuários e seus times de futebol
+   datausers-teams-table.json
+   datausers-teams-items.json
+
+users-selecoes/             # Usuários e suas seleções
+   datausers-selecoes-table.json
+   datausers-selecoes-items.json
+
+users-vehicles/             # Usuários e seus veículos
+   datausers-vehicles-table.json
+   datausers-vehicles-items.json
+
+create-tables.ps1           # Script PowerShell para criar e popular as tabelas
+README.md                   # Documentação do projeto
+
+🔧 Pré-requisitos
+
+Antes de rodar os exemplos, você precisará ter:
+
+✅ Conta AWS ativa
+
+✅ AWS CLI configurado com suas credenciais
+
+✅ Permissões no IAM para usar DynamoDB (AmazonDynamoDBFullAccess)
+
+✅ PowerShell instalado
+
+🎯 Objetivo
+
+Este projeto foi criado para aprendizado de DynamoDB, servindo como um guia simples para quem está iniciando.
+Você pode adaptar os arquivos JSON para criar suas próprias tabelas e modelos de dados.
+
+🚀 Como usar
+
+Clone este repositório:
+
+git clone https://github.com/seu-usuario/dynamodb-examples.git
+cd dynamodb-examples
 
 
+Execute o script PowerShell para criar e popular as tabelas:
 
-- `users-teams/` → Exemplo de usuários e seus times de futebol.  
-- `users-selecoes/` → Exemplo de usuários e seleções.  
-- `users-vehicles/` → Exemplo de usuários e veículos.  
-- `create-tables.ps1` → Script que cria as tabelas e insere os dados.  
-- `README.md` → Este guia.  
+.\create-tables.ps1
 
----
 
-⚙️ Pré-requisitos
-
-Antes de rodar este projeto, você precisa ter:
-
-1. **Conta AWS ativa**.  
-2. **Usuário IAM** com permissões:  
-   - `AmazonDynamoDBFullAccess`  
-   - `AdministratorAccess` (opcional, mas facilita testes).  
-3. **AWS CLI instalada** e configurada:  
-   ```bash
-   aws configure
+Verifique no console AWS DynamoDB se as tabelas foram criadas e os dados inseridos.
 
 📌 Observações
 
-Este repositório tem caráter educacional e serve para aprender DynamoDB na prática.
+Os arquivos *-table.json definem o esquema da tabela (chaves primárias, atributos, etc).
 
-Pode ser expandido para outros exemplos, como índices secundários, consultas (Query e Scan), entre outros.
+Os arquivos *-items.json contêm dados de exemplo que são inseridos após a criação da tabela.
 
-Para evitar custos desnecessários, apague as tabelas depois de testar:
+Você pode modificar esses JSONs para experimentar novos cenários.
+
+📖 Aprendizados esperados
+
+Criar tabelas no DynamoDB via AWS CLI.
+
+Inserir dados em massa usando arquivos JSON.
+
+Entender conceitos básicos de chaves primárias (HASH e RANGE).
+
+Testar diferentes modelos de dados em NoSQL.
