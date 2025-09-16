@@ -5,6 +5,8 @@ Este repositório contém exemplos práticos de criação de tabelas no Amazon D
 A ideia é mostrar, de forma simples e organizada, como estruturar e popular tabelas com dados iniciais para fins de estudo e experimentação.
 
 📁 Estrutura do projeto
+
+
 dynamodb-examples/
 users-teams/                # Usuários e seus times de futebol
    datausers-teams-table.json
