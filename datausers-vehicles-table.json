@@ -1,0 +1,24 @@
+{
+    "TableName": "users-vehicles",
+    "KeySchema": [
+        {
+            "AttributeName": "UserId",
+            "KeyType": "HASH"
+        },
+        {
+            "AttributeName": "Vehicle",
+            "KeyType": "RANGE"
+        }
+    ],
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "UserId",
+            "AttributeType": "S"
+        },
+        {
+            "AttributeName": "Vehicle",
+            "AttributeType": "S"
+        }
+    ],
+    "BillingMode": "PAY_PER_REQUEST"
+}

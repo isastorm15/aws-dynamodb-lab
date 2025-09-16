@@ -1,0 +1,40 @@
+{
+    "users-teams": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "UserId": {
+                        "S": "1"
+                    },
+                    "Team": {
+                        "S": "Palmeiras"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "UserId": {
+                        "S": "2"
+                    },
+                    "Team": {
+                        "S": "Bahia"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "UserId": {
+                        "S": "3"
+                    },
+                    "Team": {
+                        "S": "S\u00e3o Paulo"
+                    }
+                }
+            }
+        }
+    ]
+}

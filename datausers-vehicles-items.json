@@ -1,0 +1,40 @@
+{
+    "users-vehicles": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "UserId": {
+                        "S": "1"
+                    },
+                    "Vehicle": {
+                        "S": "Carro"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "UserId": {
+                        "S": "2"
+                    },
+                    "Vehicle": {
+                        "S": "Moto"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "UserId": {
+                        "S": "3"
+                    },
+                    "Vehicle": {
+                        "S": "Bicicleta"
+                    }
+                }
+            }
+        }
+    ]
+}

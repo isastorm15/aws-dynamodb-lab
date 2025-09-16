@@ -1,0 +1,40 @@
+{
+    "users-selecoes": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "UserId": {
+                        "S": "1"
+                    },
+                    "Selecao": {
+                        "S": "Brasil"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "UserId": {
+                        "S": "2"
+                    },
+                    "Selecao": {
+                        "S": "Argentina"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "UserId": {
+                        "S": "3"
+                    },
+                    "Selecao": {
+                        "S": "Fran\u00e7a"
+                    }
+                }
+            }
+        }
+    ]
+}
