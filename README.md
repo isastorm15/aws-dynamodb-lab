@@ -7,20 +7,21 @@ A ideia é ser um guia simples e prático para quem está começando a aprender 
 
 dynamodb-examples/
 │
-├── users-teams/              # Usuários e seus times
+├── users-teams/                # Usuários e seus times de futebol
 │   ├── datausers-teams-table.json
 │   └── datausers-teams-items.json
 │
-├── users-selecoes/           # Usuários e suas seleções
+├── users-selecoes/             # Usuários e suas seleções
 │   ├── datausers-selecoes-table.json
 │   └── datausers-selecoes-items.json
 │
-├── users-vehicles/           # Usuários e seus veículos
+├── users-vehicles/             # Usuários e seus veículos
 │   ├── datausers-vehicles-table.json
 │   └── datausers-vehicles-items.json
 │
-├── create-tables.ps1         # Script PowerShell para criar e popular as tabelas
-└── README.md                 # Documentação do projeto
+├── create-tables.ps1           # Script PowerShell para criar e popular as tabelas
+└── README.md                   # Documentação do projeto
+
 
 
 - `users-teams/` → Exemplo de usuários e seus times de futebol.  
