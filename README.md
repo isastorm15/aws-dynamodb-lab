@@ -1,10 +1,10 @@
 🚀 DynamoDB Examples
 
-Este repositório contém exemplos práticos de criação de tabelas no Amazon DynamoDB e inserção de dados utilizando arquivos JSON e um script em PowerShell.
+Este repositório contém exemplos de **criação de tabelas no Amazon DynamoDB** e inserção de dados utilizando **arquivos JSON** e um script em **PowerShell**.  
+A ideia é ser um guia simples e prático para quem está começando a aprender DynamoDB.
 
-A ideia é mostrar, de forma simples, como estruturar e popular tabelas com dados iniciais para fins de estudo e experimentação.
+📂 Estrutura do projeto
 
-📂 Estrutura do Projeto
 dynamodb-examples/
 │
 ├── users-teams/              # Usuários e seus times
@@ -22,19 +22,31 @@ dynamodb-examples/
 ├── create-tables.ps1         # Script PowerShell para criar e popular as tabelas
 └── README.md                 # Documentação do projeto
 
-📌 Pré-requisitos
 
-Conta AWS ativa
+- `users-teams/` → Exemplo de usuários e seus times de futebol.  
+- `users-selecoes/` → Exemplo de usuários e seleções.  
+- `users-vehicles/` → Exemplo de usuários e veículos.  
+- `create-tables.ps1` → Script que cria as tabelas e insere os dados.  
+- `README.md` → Este guia.  
 
-AWS CLI
- configurado com suas credenciais
+---
 
-Permissões no IAM para usar DynamoDB (AmazonDynamoDBFullAccess)
+⚙️ Pré-requisitos
 
-PowerShell instalado
+Antes de rodar este projeto, você precisa ter:
 
+1. **Conta AWS ativa**.  
+2. **Usuário IAM** com permissões:  
+   - `AmazonDynamoDBFullAccess`  
+   - `AdministratorAccess` (opcional, mas facilita testes).  
+3. **AWS CLI instalada** e configurada:  
+   ```bash
+   aws configure
 
-📖 Objetivo
+📌 Observações
 
-Este projeto foi criado para aprendizado de DynamoDB, servindo como um guia simples para quem está iniciando.
-Você pode adaptar os JSONs para suas próprias tabelas e modelos de dados.
+Este repositório tem caráter educacional e serve para aprender DynamoDB na prática.
+
+Pode ser expandido para outros exemplos, como índices secundários, consultas (Query e Scan), entre outros.
+
+Para evitar custos desnecessários, apague as tabelas depois de testar:
