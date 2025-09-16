@@ -40,20 +40,6 @@ Antes de rodar os exemplos, você precisará ter:
 Este projeto foi criado para aprendizado de DynamoDB, servindo como um guia simples para quem está iniciando.
 Você pode adaptar os arquivos JSON para criar suas próprias tabelas e modelos de dados.
 
-🚀 Como usar
-
-Clone este repositório:
-
-git clone https://github.com/seu-usuario/dynamodb-examples.git
-cd dynamodb-examples
-
-
-Execute o script PowerShell para criar e popular as tabelas:
-
-.\create-tables.ps1
-
-
-Verifique no console AWS DynamoDB se as tabelas foram criadas e os dados inseridos.
 
 📌 Observações
 
