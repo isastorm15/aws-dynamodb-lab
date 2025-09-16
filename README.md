@@ -33,43 +33,7 @@ Permissões no IAM para usar DynamoDB (AmazonDynamoDBFullAccess)
 
 PowerShell instalado
 
-▶️ Como Executar
 
-Clone este repositório:
-
-git clone https://github.com/seu-usuario/dynamodb-examples.git
-cd dynamodb-examples
-
-
-Execute o script:
-
-.\create-tables.ps1
-
-
-O script criará e populará automaticamente as tabelas:
-
-users-teams → Usuários e seus times de futebol
-
-users-selecoes → Usuários e suas seleções
-
-users-vehicles → Usuários e seus veículos
-
-✅ Exemplo de Dados
-Tabela: users-teams
-UserId	Team
-1	Palmeiras
-2	Bahia
-3	São Paulo
-Tabela: users-selecoes
-UserId	Selecao
-1	Brasil
-2	Argentina
-3	Portugal
-Tabela: users-vehicles
-UserId	Vehicle
-1	Carro
-2	Moto
-3	Bicicleta
 📖 Objetivo
 
 Este projeto foi criado para aprendizado de DynamoDB, servindo como um guia simples para quem está iniciando.
